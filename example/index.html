@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- The doctype declaration defines this document as an HTML5 document. The lang="en" attribute indicates the language is English. -->
+
+<head>
+    <!-- The <head> section contains metadata about the page (information not shown to users). -->
+    <meta charset="UTF-8">
+    <!-- This meta tag specifies the character encoding for the document. UTF-8 supports many characters (including special characters). -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This meta tag ensures that the webpage is responsive on different devices (e.g., mobile phones and tablets). -->
+    <link rel ="stylesheet" href ="styles.css">
+    <title>Grid Example using Semantic Markup</title>
+    <!-- The title tag defines the text that appears in the browser's tab or window. -->
+</head>
+
+<body>
+    <!-- The <body> section contains the visible content of the webpage. -->
+
+    <div class="wrapper">
+        <!-- The wrapper <div> is a container element that holds all content of the page. You can use classes like "wrapper" to style or position the entire page using CSS. -->
+
+        <header class="one">
+            <!-- The <header> tag defines the header of the page. It typically includes introductory content like a logo or tagline. -->
+            <h1>Header</h1>
+            <!-- The <h1> tag is the main heading of the page, which should be the most important title. -->
+            <p>The header typically includes your logo or tagline</p>
+            <!-- <p> is a paragraph element used for text. Here it describes the purpose of the header. -->
+        </header>
+
+        <nav class="two">
+            <!-- The <nav> element is used for navigation menus (links). This section typically contains links to other parts of the website. -->
+            <h2>Navbar</h2>
+            <!-- <h2> is a secondary heading. It’s a bit smaller than <h1> and helps to organize content. -->
+            <p>The nav element isn't used for every single link but for navigational menus</p>
+            <!-- This paragraph describes the purpose of the <nav> element. -->
+            
+            <ul>
+                <!-- The <ul> element represents an unordered list. It’s used to group list items. -->
+                <li class="active"><a href="Home.html">Home</a></li>
+                <!-- <li> is a list item. Inside it is an anchor (<a>) element that creates a link. The "active" class indicates this is the current page. -->
+                <li><a href="#">Page 2</a></li>
+                <!-- This <a> tag links to a page. The href="#" is a placeholder that doesn't actually navigate anywhere. -->
+                <li><a href="#">Page 3</a></li>
+                <li><a href="#">Page 4</a></li>
+                <li><a href="#">Page 5</a></li>
+            </ul>
+            <!-- The list items (<li>) are the clickable links in the navigation menu. -->
+        </nav>
+
+        <section class="three">
+            <!-- The <section> element represents a section of content, often with its own heading. -->
+            <h2>Section</h2>
+            <!-- The <h2> tag is used for a subheading, smaller than <h1>. This one titles this section "Section". -->
+            <p>Sections are used to separate major parts of an element</p>
+            <!-- A paragraph describing what a <section> is. -->
+            <p>Lorem ipsum dolor sit amet...</p>
+            <!-- Another paragraph with placeholder text (Lorem Ipsum), which is often used for testing or demonstrating content layout. -->
+        </section>
+
+        <section class="four">
+            <!-- Another section, similar to the previous one, containing more content. -->
+            <h2>Section</h2>
+            <p>Sections are used to separate major parts of an element</p>
+            <p>Lorem ipsum dolor sit amet...</p>
+        </section>
+
+        <section class="five">
+            <!-- Another section of content. -->
+            <h2>Section</h2>
+            <p>Sections are used to separate major parts of an element</p>
+            <p>Lorem ipsum dolor sit amet...</p>
+        </section>
+
+        <footer class="six">
+            <!-- The <footer> tag is used for the footer of the page, typically containing copyright or additional links. -->
+            <h2>Footer</h2>
+            <!-- A footer heading. -->
+            <p>The footer typically contains links to things like About Us, Privacy Policy, Contact Us, and so forth.</p>
+            <!-- A paragraph describing what is typically included in the footer. -->
+            <p>&copy; glasgowclyde.ac.uk</p>
+            <!-- Another paragraph showing copyright information. &copy; is the HTML entity for the copyright symbol. -->
+        </footer>
+
+    </div>
+
+</body>
+</html>

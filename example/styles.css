@@ -1,0 +1,192 @@
+/* This is the body of the page. */
+body {
+    font-family: helvetica; 
+    /* Sets the font for the entire webpage to Helvetica. */
+    
+    background-color: #EDF5E1; 
+    /* Sets the background color of the webpage. #EDF5E1 is a light greenish color. */
+    
+    margin: 10px 10px 10px 10px; 
+    /* Adds a 10px margin around the body (space between the body content and the edges of the page). */
+}
+
+/* The .wrapper class styles the container that holds all the content on the page. */
+.wrapper {
+    display: grid; 
+    /* Defines the layout of the container as a grid, allowing elements to be positioned in rows and columns. */
+    
+    grid-gap: 5px; 
+    /* Adds a 5px space between the grid items. */
+    
+    grid-auto-rows: minmax(100px, auto); 
+    /* Sets the minimum height of grid rows to 100px and allows the height to grow automatically. */
+}
+
+/* The .one class styles the first section (header or main content) inside the grid. */
+.one {
+    grid-column: 1 / 2; 
+    /* Positions this element to span from column 1 to column 2 in the grid. */
+    
+    border: solid 2px; 
+    /* Adds a 2px solid border around the element. */
+    
+    background-color: #93e6f1; 
+    /* Sets the background color of the element to a light blue color. */
+    
+    font-size: 20px; 
+    /* Sets the font size for the text inside this element to 20px. */
+    
+    padding: 5px; 
+    /* Adds 5px of padding inside the element, creating space between the content and the border. */
+}
+
+/* The .two class styles the navigation bar or second section inside the grid. */
+.two {
+    grid-column: 3 / 6; 
+    /* Positions this element to span from column 3 to column 6 in the grid. */
+    
+    border: solid 2px; 
+    /* Adds a 2px solid border around the element. */
+    
+    background-color: #F19D93; 
+    /* Sets the background color of the element to a light peach color. */
+    
+    font-size: 20px; 
+    /* Sets the font size for the text inside this element to 20px. */
+    
+    padding: 5px; 
+    /* Adds 5px of padding inside the element. */
+}
+
+/* The .two li class styles the list items inside the .two navigation menu. */
+.two li {
+    display: inline; 
+    /* Displays list items inline, meaning they will be shown on the same line. */
+    
+    float: left; 
+    /* Floats the list items to the left, allowing them to sit side by side. */
+    
+    text-align: center; 
+    /* Centers the text inside each list item. */
+    
+    padding: 14px 16px; 
+    /* Adds padding (space) inside each list item, 14px on top and bottom, and 16px on left and right. */
+    
+    font-size: 17px; 
+    /* Sets the font size inside each list item to 17px. */
+    
+    background-color: black; 
+    /* Sets the background color of the list items to black. */
+    
+    color: white; 
+    /* Sets the text color inside the list items to white. */
+    
+    border: solid 2px white; 
+    /* Adds a 2px white solid border around each list item. */
+}
+
+/* The .two a class styles the links (<a>) inside the .two list items. */
+.two a {
+    text-decoration: none; 
+    /* Removes the underline from links. */
+    
+    color: white; 
+    /* Sets the link text color to white. */
+}
+
+/* The .two li:hover class styles the list items when the mouse hovers over them. */
+.two li:hover {
+    background-color: lightgrey; 
+    /* Changes the background color of the list items to light grey when hovered. */
+}
+
+/* The .two li.active class styles the list item that has the "active" class applied (usually the current page or selected item). */
+.two li.active {
+    background-color: RoyalBlue; 
+    /* Sets the background color of the active list item to Royal Blue. */
+}
+
+/* The .three class styles another section inside the grid, similar to .one but in a different position. */
+.three {
+    grid-column: 1 / 2; 
+    /* Positions this element to span from column 1 to column 2 in the grid. */
+    
+    border: solid 2px; 
+    /* Adds a 2px solid border around the element. */
+    
+    background-color: #90efaf; 
+    /* Sets the background color to a light green. */
+    
+    font-size: 20px; 
+    /* Sets the font size for the text inside this element to 20px. */
+    
+    padding: 5px; 
+    /* Adds 5px of padding inside the element. */
+}
+
+/* The .four class styles another section, placed differently in the grid. */
+.four {
+    grid-column: 3 / 4; 
+    /* Positions this element to span from column 3 to column 4 in the grid. */
+    
+    border: solid 2px; 
+    /* Adds a 2px solid border around the element. */
+    
+    background-color: #90efaf; 
+    /* Sets the background color to light green. */
+    
+    font-size: 20px; 
+    /* Sets the font size to 20px. */
+    
+    padding: 5px; 
+    /* Adds padding inside the element. */
+}
+
+/* The .five class styles another section inside the grid. */
+.five {
+    grid-column: 5 / 6; 
+    /* Positions this element to span from column 5 to column 6 in the grid. */
+    
+    border: solid 2px; 
+    /* Adds a 2px solid border around the element. */
+    
+    background-color: #90efaf; 
+    /* Sets the background color to light green. */
+    
+    font-size: 20px; 
+    /* Sets the font size to 20px. */
+    
+    padding: 5px; 
+    /* Adds 5px of padding inside the element. */
+}
+
+/* The .six class styles the footer or bottom section of the grid. */
+.six {
+    grid-column: 1 / 6; 
+    /* Positions this element to span across all 6 columns of the grid. */
+    
+    border: solid 2px; 
+    /* Adds a 2px solid border around the element. */
+    
+    background-color: lavender; 
+    /* Sets the background color to a lavender shade. */
+    
+    font-size: 20px; 
+    /* Sets the font size to 20px. */
+    
+    padding: 5px; 
+    /* Adds 5px of padding inside the element. */
+}
+
+@media only screen and (max-width: 600px) {
+
+    body {
+      background-color: lightblue;
+         }
+
+.one, .two, .three, .four, .five, .six {
+
+            grid-column: 1 / 1;
+                          
+        }
+      }
