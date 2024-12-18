@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JS task</title>
+</head>
+
+<body>
+    <h1>Here is the List</h1>
+    <ul>
+        <li id="firstThing">111</li>
+        <li id="secondThing">222</li>
+        <li id="thirdThing">333</li>
+    </ul>
+    <button id="changeList">
+        Chanche the list
+    </button>
+
+    <script>
+        let item1;
+        let item2;
+        let item3;
+
+        document.getElementById('changeList').onclick = newList;
+
+        function newList() {
+            item1 = prompt('Enter a new value for 1st');
+            item2 = prompt('Enter a new value for 2nd');
+            item3 = prompt('Enter a new value for 3rd');
+            updateList();
+
+            function updateList() {
+                document.getElementById('firstThing').innerHTML = item1;
+                document.getElementById('secondThing').innerHTML = item2;
+                document.getElementById('thirdThing').innerHTML = item3;
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>

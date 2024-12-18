@@ -1,0 +1,80 @@
+/* stylesheet for The Coffee Shop */
+/* Designed by Michael */
+/* 2020 */
+/* Colours: #3E0F1B, #6F2A3B, #C3B9B5, #A27448, #6C4427 */
+
+body {
+    background-color: #6F2A3B;
+    font-family: Arial, Helvetica;
+    color: #ffffff;
+    margin: 0;
+}
+#header {
+    background-color: #3E0F1B;
+    padding: 20px;
+    text-align: center;
+}
+
+#header img {
+    width: 75%;
+    max-width: 728px;
+}
+h1{
+    text-align: center;
+    color: #A27448;
+    
+}
+
+p{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #C3B9B5;
+}
+
+.coffee {
+    font-weight: 900;
+    color: #A27448
+}
+
+.address {
+    color: #ffffff;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    background-color: #A27448;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 5px solid #ffffff;
+}
+
+nav a {
+    font-size: 1.5em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #3E0F1B;
+}
+
+table {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.coffeepic{
+    width: 35%;
+    margin: 0 auto;
+    display: block;
+    border: 5px solid #ffffff;
+}
+
+h2 {
+   
+    background-color: #3E0F1B;
+    padding: 10px;
+    
+}
+
