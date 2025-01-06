@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextileGift</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+        body {
+            background-color: #f9f5ed;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Section 1 */
+        .section-1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 2rem;
+            background-color: #f9f9f9;
+        }
+
+        .inner-section {
+            flex: 1 1 30%;
+            max-width: 30%;
+            text-align: center;
+            margin: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            background: white;
+        }
+
+        .inner-section img {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .inner-section p {
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 767px) {
+            .section-1 {
+                flex-direction: column;
+            }
+
+            .inner-section {
+                max-width: 100%;
+            }
+        }
+
+        /* Section 2 */
+        .section-2 {
+            background: url('https://via.placeholder.com/1920x400') no-repeat center center fixed;
+            background-size: cover;
+            height: 400px;
+            position: relative;
+            color: white;
+            text-align: center;
+        }
+
+        .section-2 .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 600px;
+        }
+
+        /* Section 3 */
+        .section-3 {
+            padding: 2rem;
+            background-color: #e3f2fd;
+            text-align: center;
+        }
+
+        .features {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .features li {
+            margin: 0.5rem 1rem;
+            font-size: 1.1rem;
+            flex: 1 1 45%;
+            text-align: left;
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        @media (max-width: 767px) {
+            .features li {
+                flex: 1 1 100%;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TextileGift</h1>
+    </header>
+
+    <section class="section-1">
+        <div class="inner-section">
+            <img src="img/cozybed.png" alt="Bedding">
+            <p>Transform your bedroom into a sanctuary of comfort and style with our premium bedding collection. From soft cotton sheets to luxurious duvet covers, our range offers unmatched quality and elegance.</p>
+        </div>
+        <div class="inner-section">
+            <img src="img/towels.jpg" alt="Towels">
+            <p>Pamper yourself with our plush and absorbent towel collection. Crafted from high-quality fabrics, our towels provide a spa-like experience every day.</p>
+        </div>
+        <div class="inner-section">
+            <img src="img/robes.jpg" alt="Bathrobes">
+            <p>Wrap yourself in luxury with our premium bathrobes. Perfect for relaxing mornings or cozy evenings, our bathrobes combine comfort and style.</p>
+        </div>
+    </section>
+
+    <section class="section-2">
+        <div class="overlay-text">
+            <h2>About Us</h2>
+            <p>At TextileGift, we believe that the essence of gifting lies in thoughtfulness and utility. Located in the heart of Bristol, UK, our team works tirelessly to source materials that are eco-friendly and built to last.</p>
+        </div>
+    </section>
+
+    <section class="section-3">
+        <h2>Why Choose TextileGift?</h2>
+        <ul class="features">
+            <li><strong>Comfort Meets Elegance:</strong> Our bedding sets, plush towels, and cozy robes combine premium materials with timeless designs.</li>
+            <li><strong>Gifts for Everyone:</strong> Perfect for friends, family, and coworkers, our products suit any occasion.</li>
+            <li><strong>Practical and Personal:</strong> A heartfelt gift that brings daily comfort and utility to loved ones.</li>
+            <li><strong>Easy Gifting:</strong> Beautifully packaged and ready to impress!</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TextileGift. All rights reserved.</p>
+    </footer>
+</body>
+</html>
