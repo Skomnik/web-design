@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dignan's Catering Special Offer</title>
+    <meta name="description" content="Wedding catering in Edinburgh. Wide variety of dishes and good prices.">
+    <meta name="keywords" content="Wedding catering Edinburgh, Funeral catering Edinburgh, Corporate event Edinburg, Business lunch Edinburgh">
+    <meta name="author" content="Nikita Skomorokhov">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:light' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/x-icon" href="img/fav.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <img src="img/banner-min.jpg" alt="Banner" class="banner-image">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/new_logo_mob.png" alt="Logo for PC" class="pc-logo">
+                    <img src="img/new_logo_mob1.png" alt="Logo for mobile" class="mobile-logo">
+                </a>
+
+            </div>
+
+            <button class="hamburger" aria-label="Menu">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><u><a href="specialoffer.html">Special Offer</a></u></li>
+                    <li><a href="orderform.html">Order Form</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Special Offers</h1>
+                <h2>Exclusive Deals Just for You</h2>
+                <p>At Dignans Catering, we love to reward our loyal customers with special offers and discounts. Check out our current promotions below and take advantage of these limited-time deals!</p>
+
+                <div class="offers">
+                    <div class="offer">
+                        <h3>Wedding Package Discount</h3>
+                        <img class="about-image" src="img/wedding.jpg" alt="Wedding banner">
+                        <p>Planning your dream wedding? Book our premium wedding catering package before the end of the month and enjoy a <strong>10% discount</strong>! Includes a custom menu, professional staff, and complimentary dessert bar.</p>
+                        <a href="orderform.html" class="btn">Make an order</a>
+                    </div>
+
+                    <div class="offer">
+                        <h3>Corporate Event Special</h3>
+                        <div class="service2">
+                            <img class="about-image" src="img/corp115.jpg" alt="Corporate banner">
+                        </div>
+                        <p>Hosting a corporate event? Get <strong>15% off</strong> our corporate catering services for events with 50+ guests. Perfect for conferences, team-building events, and office parties.</p>
+                        <a href="orderform.html" class="btn">Make an order</a>
+                    </div>
+
+                    <div class="offer">
+                        <h3>Funeral Catering</h3>
+                        <div class="service2">
+                            <img class="about-image" src="img/funera5.jpg" alt="Funeral banner">
+                        </div>
+                        <p>Hosting a corporate event? Get <strong>5% off</strong> our corporate catering services for events with 50+ guests. Perfect for conferences, team-building events, and office parties.</p>
+                        <a href="orderform.html" class="btn">Make an order</a>
+                    </div>
+
+                    <div class="offer">
+                        <h3>Seasonal Menu Tasting</h3>
+                        <p>Join us for an exclusive tasting of our new seasonal menu! For a limited time, enjoy a <strong>3-course meal for just £25 per person</strong>. Available every Friday and Saturday evening.</p>
+                        <a href="orderform.html" class="btn">Make an order</a>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="foot">
+            <p>Follow us on social media</p>
+            <a href="https://www.facebook.com/"> <img class="social" src="img/facebook.png" alt="Logo Facebook"> </a>
+            <a href="https://www.instagram.com/"> <img class="social" src="img/instagram.png" alt="Logo Instagram"> </a>
+            <a href="https://x.com/"> <img class="social" src="img/twitter.png" alt="Logo Twitter"> </a>
+        </div>
+        <p>&copy; 2025 Nikita Skomorokhov. All rights reserved.</p>
+
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navigation = document.querySelector('.navigation');
+
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navigation.classList.toggle('active');
+            });
+
+            //closing
+            const navLinks = document.querySelectorAll('.navigation a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    hamburger.classList.remove('active');
+                    navigation.classList.remove('active');
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>

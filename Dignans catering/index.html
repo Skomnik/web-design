@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dignan's Catering</title>
+    <meta name="description" content="Best catering in Edinburgh. Wide menu selection, quality service.">
+    <meta name="keywords" content="catering Edinburgh, best catering Edinburgh, tasty catering Edinburgh">
+    <meta name="author" content="Nikita Skomorokhov">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:light' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/x-icon" href="img/fav.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+
+
+
+
+<body>
+    <header>
+        <div class="banner">
+            <img src="img/banner-min.jpg" alt="Banner" class="banner-image">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/new_logo_mob.png" alt="Logo for PC" class="pc-logo">
+                    <img src="img/new_logo_mob1.png" alt="Logo for mobile" class="mobile-logo">
+                </a>
+
+            </div>
+
+            <button class="hamburger" aria-label="Menu">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
+
+
+            <nav class="navigation">
+                <ul>
+                    <li><u><a href="index.html">Home</a></u></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="specialoffer.html">Special Offer</a></li>
+                    <li><a href="orderform.html">Order Form</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Dignan's Catering</h1>
+                <h2>Welcome to Dignans Catering – Your Perfect Partner in Taste and Hospitality!</h2>
+
+                <p>We are a team of professionals who turn any event into an unforgettable experience. Our catering company, with a cozy café in the heart of Edinburgh, offers a wide range of services: from exquisite banquets and corporate events to intimate family gatherings and wedding celebrations.</p>
+
+
+            </div>
+        </section>
+
+
+        <div class="services">
+
+            <div class="services-grid">
+                <div>
+
+                    <img class="about-image" src="img/cafeoutside.webp" alt="Cafe outside">
+
+                </div>
+
+                <div>
+
+                    <img class="about-image" src="img/inside3.webp" alt="Cafe inside">
+
+                </div>
+            </div>
+        </div>
+
+
+        <section class="about">
+            <div class="about-content">
+                <h2>Why Choose Us?</h2>
+
+                <p class="text-justify"><strong>Flavor that Inspires:</strong> Our chefs create dishes that combine traditional Scottish motifs with modern culinary trends. We use only fresh, seasonal ingredients from local suppliers.</p>
+
+                <p class="text-justify"><strong>Personalized Approach:</strong> Every event is unique, and we are ready to bring your ideas to life. From menu planning to venue decoration – we take care of everything.</p>
+
+                <p class="text-justify"><strong>Cozy Café in Edinburgh:</strong> Visit our café to enjoy aromatic coffee, fresh pastries, and dishes from our daily menu. It’s the perfect spot for meetings, work, or relaxation.</p>
+
+                <p class="text-justify"><strong>Professional Service:</strong> Our team guarantees the highest level of service to ensure you and your guests feel comfortable and at ease.</p>
+
+
+            </div>
+            <img src="img/meals.jpg" alt="Our Meals" class="about-image">
+        </section>
+
+
+        <section class="hero">
+            <h2>Our Services:</h2>
+
+            <p>- Catering for events of any scale<br>
+                - Wedding, corporate, and private party organization<br>
+                - Home or office delivery<br>
+                - A cozy café with a delicious menu and welcoming atmosphere</p>
+
+            <p><strong>Contact us today to discuss your event or simply drop by our café – we’ll make your day special!</strong></p>
+
+        </section>
+
+
+        <div class="services">
+
+            <div class="services-grid">
+                <div class="service">
+                    <h3>Catering</h3>
+                    <p>Organization of events of any scale: from weddings to corporate parties.</p>
+                </div>
+
+                <div class="service">
+                    <h3>Cafe</h3>
+                    <p>A cozy place for meetings, work and relaxation.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="services">
+
+            <div class="services-grid">
+                <div class="buttons">
+                    <a href="menu.html" class="btn">Menu</a>
+                    <a href="orderform.html" class="btn">Make an order</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="foot">
+            <p>Follow us on social media</p>
+            <a href="https://www.facebook.com/"> <img class="social" src="img/facebook.png" alt="Logo Facebook"> </a>
+            <a href="https://www.instagram.com/"> <img class="social" src="img/instagram.png" alt="Logo Instagram"> </a>
+            <a href="https://x.com/"> <img class="social" src="img/twitter.png" alt="Logo Twitter"> </a>
+        </div>
+        <p>&copy; 2025 Nikita Skomorokhov. All rights reserved.</p>
+
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navigation = document.querySelector('.navigation');
+
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navigation.classList.toggle('active');
+            });
+
+
+            const navLinks = document.querySelectorAll('.navigation a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    hamburger.classList.remove('active');
+                    navigation.classList.remove('active');
+                });
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

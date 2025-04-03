@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dignan's Catering Order Form</title>
+
+    <meta name="description" content="The best dishes in Edinburgh. Tasty and fresh">
+    <meta name="keywords" content="tasty Edinburgh, best dishes Edinburgh, delicious food Edinburgh">
+    <meta name="author" content="Nikita Skomorokhov">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:light' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/x-icon" href="img/fav.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <img src="img/banner-min.jpg" alt="Banner" class="banner-image">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/new_logo_mob.png" alt="Logo for PC" class="pc-logo">
+                    <img src="img/new_logo_mob1.png" alt="Logo for mobile" class="mobile-logo">
+                </a>
+
+            </div>
+
+            <button class="hamburger" aria-label="Menu">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="specialoffer.html">Special Offer</a></li>
+                    <li><u><a href="orderform.html">Order Form</a></u></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+
+            <h1>Order Form</h1>
+
+            <h2>Make an order</h2>
+            <p>Contact us today to discuss your event or simply drop by our café – we’ll make your day special!</p>
+
+            <form class="contact-form" action="conf.html" method="get">
+                <label for="name">Enter your name:</label>
+                <input type="text" id="name" name="username" placeholder="Enter your name" required>
+                <label for="phone">Enter your phone number:</label>
+                <input type="number" id="phone" name="phone" placeholder="Enter your phone number" required>
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label for="message">Enter your message:</label>
+                <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="foot">
+            <p>Follow us on social media</p>
+            <a href="https://www.facebook.com/"> <img class="social" src="img/facebook.png" alt="Logo Facebook"> </a>
+            <a href="https://www.instagram.com/"> <img class="social" src="img/instagram.png" alt="Logo Instagram"> </a>
+            <a href="https://x.com/"> <img class="social" src="img/twitter.png" alt="Logo Twitter"> </a>
+        </div>
+        <p>&copy; 2025 Nikita Skomorokhov. All rights reserved.</p>
+
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navigation = document.querySelector('.navigation');
+
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navigation.classList.toggle('active');
+            });
+
+
+            const navLinks = document.querySelectorAll('.navigation a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    hamburger.classList.remove('active');
+                    navigation.classList.remove('active');
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>

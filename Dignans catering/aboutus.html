@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dignan's Catering About Us</title>
+    <meta name="description" content="Meals for your office. Corporate lunches.">
+    <meta name="keywords" content="Corporate lunches Edinburgh, business lunches Edinburgh, office catering Edinburgh">
+    <meta name="author" content="Nikita Skomorokhov">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:light' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/x-icon" href="img/fav.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <img src="img/banner-min.jpg" alt="Banner" class="banner-image">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/new_logo_mob.png" alt="Logo for PC" class="pc-logo">
+                    <img src="img/new_logo_mob1.png" alt="Logo for mobile" class="mobile-logo">
+                </a>
+
+            </div>
+            <button class="hamburger" aria-label="Menu">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="specialoffer.html">Special Offer</a></li>
+                    <li><a href="orderform.html">Order Form</a></li>
+                    <li><u><a href="aboutus.html">About Us</a></u></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>About Dignan's Catering</h1>
+                <h2>Our Story</h2>
+                <p class="text-justify">Dignans Catering was founded in 2010 with a simple mission: to bring people together through exceptional food and unforgettable experiences. Over the years, we have grown from a small local café into one of Edinburgh's most trusted catering companies, serving everything from intimate family gatherings to large-scale corporate events.</p>
+
+                <h2>Our Philosophy</h2>
+                <p class="text-justify">We believe that great food starts with great ingredients. That's why we source our produce from local farmers and suppliers, ensuring the freshest and highest quality ingredients in every dish. Our chefs combine traditional Scottish flavors with modern culinary techniques to create menus that delight and inspire.</p>
+
+                <h2>Our Team</h2>
+                <p class="text-justify">Our team is the heart of Dignans Catering. From our talented chefs to our dedicated event planners, everyone is committed to making your event a success. We take pride in our attention to detail, personalized service, and passion for creating memorable experiences.</p>
+
+            </div>
+
+
+        </div>
+        <div class="services" id="services">
+            <div class="services-grid">
+                <div>
+                    <img class="about-image" src="img/team5.webp" alt="Our team">
+                </div>
+                <div>
+                    <img class="about-image" src="img/team3.jpg" alt="Our team">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="foot">
+            <p>Follow us on social media</p>
+            <a href="https://www.facebook.com/"> <img class="social" src="img/facebook.png" alt="Logo Facebook"> </a>
+            <a href="https://www.instagram.com/"> <img class="social" src="img/instagram.png" alt="Logo Instagram"> </a>
+            <a href="https://x.com/"> <img class="social" src="img/twitter.png" alt="Logo Twitter"> </a>
+        </div>
+        <p>&copy; 2025 Nikita Skomorokhov. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navigation = document.querySelector('.navigation');
+
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navigation.classList.toggle('active');
+            });
+
+            //closing
+            const navLinks = document.querySelectorAll('.navigation a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    hamburger.classList.remove('active');
+                    navigation.classList.remove('active');
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>
